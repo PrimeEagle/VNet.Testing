@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
+		<Copy SourceFiles="$(OutputPath)\VNet.Testing.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />
+	</Target>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+	</Target>
+</Project>
