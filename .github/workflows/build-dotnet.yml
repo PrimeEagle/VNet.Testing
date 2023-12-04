@@ -4,8 +4,15 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   call-reusable-workflow:
-    uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
-    with:
-      dotnetVersion: ${{ secrets.DOTNET_VERSION }}
-      solutionPath: ${{ secrets.DOTNET_SOLUTION }}
-      nugetToken: ${{ secrets.NUGET_TOKEN }}
+    runs-on: ubuntu-latest
+    env:
+      DOTNET_VERSION: ${{ secrets.DOTNET_VERSION }}
+      DOTNET_SOLUTION: ${{ secrets.DOTNET_SOLUTION }}
+      NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
+    steps:
+      - name: Call reusable workflow
+        uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
+        with:
+          dotnetVersion: ${{ env.DOTNET_VERSION }}
+          solutionPath: ${{ env.DOTNET_SOLUTION }}
+          nugetToken: ${{ env.NUGET_TOKEN }}
