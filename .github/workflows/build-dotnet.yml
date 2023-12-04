@@ -24,7 +24,7 @@ jobs:
         dotnet-version: ${{ secrets.DOTNET_VERSION }}
 
     - name: Restore NuGet packages
-      run: dotnet restore ${{ secrets.DOTNET_SOLUTION }}
+      run: dotnet restore ${{ secrets.DOTNET_SOLUTION }} --source https://nuget.pkg.github.com/PrimeEagle/index.json
   
     - name: Build with version
       run: dotnet build ${{ secrets.DOTNET_SOLUTION }} /p:BuildNumber=${{ github.run_number }}
