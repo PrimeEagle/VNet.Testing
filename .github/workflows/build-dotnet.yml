@@ -28,3 +28,4 @@ jobs:
     with:
       dotnetVersion: ${{ needs.setup-and-call-reusable.outputs.dotnetVersion }}
       solutionPath: ${{ needs.setup-and-call-reusable.outputs.solutionPath }}
+      nugetToken: ${{ needs.setup-and-call-reusable.outputs.nugetToken }}
