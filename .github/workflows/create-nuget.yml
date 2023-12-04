@@ -39,9 +39,14 @@ jobs:
         with:
           dotnet-version: ${{ secrets.DOTNET_VERSION }}
   
+      - name: Add GitHub Packages source
+        run: |
+          nuget sources Add -Name "GitHub" -Source "https://nuget.pkg.github.com/PrimeEagle/index.json" -Username PrimeEagle -Password ${{ secrets.NUGET_TOKEN }}
+  
       - name: Pack
         run: |
           dotnet pack ${{ secrets.DOTNET_SOLUTION }} --configuration Release -o nupkgs
+
   
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
