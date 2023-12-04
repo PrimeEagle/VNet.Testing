@@ -1,31 +1,43 @@
-name: Build .NET
+name: .NET Build and Version
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-  setup-and-call-reusable:
-    runs-on: ubuntu-latest
-    outputs:
-      dotnetVersion: ${{ steps.set-vars.outputs.dotnetVersion }}
-      solutionPath: ${{ steps.set-vars.outputs.solutionPath }}
-      nugetToken: ${{ steps.set-vars.outputs.nugetToken }}
+  build:
+    runs-on: windows-latest
+
     steps:
-      - name: Check secret length
-        run: echo "Length of NUGET_TOKEN - ${{ secrets.NUGET_TOKEN }}"
-      - name: Set environment variables from secrets
-        id: set-vars
-        run: |
-          echo "dotnetVersion=${{ secrets.DOTNET_VERSION }}" >> $GITHUB_ENV
-          echo "solutionPath=${{ secrets.DOTNET_SOLUTION }}" >> $GITHUB_ENV
-          echo "nugetToken=${{ secrets.NUGET_TOKEN }}" >> $GITHUB_ENV
-          echo "::set-output name=dotnetVersion::${{ secrets.DOTNET_VERSION }}"
-          echo "::set-output name=solutionPath::${{ secrets.DOTNET_SOLUTION }}"
-          echo "::set-output name=nugetToken::${{ secrets.NUGET_TOKEN }}"
+    - uses: actions/checkout@v3
+
+    - name: Install .NET 8.0 SDK
+      run: |
+        $url = "https://download.visualstudio.microsoft.com/download/pr/2b2d6133-c4f9-46dd-9ab6-86443a7f5783/340054e2ac7de2bff9eea73ec9d4995a/dotnet-sdk-8.0.100-win-x64.zip"
+        $output = "dotnet-sdk-8.0.100-win-x64.zip"
+        Invoke-WebRequest -Uri $url -OutFile $output
+        Expand-Archive $output -DestinationPath $Env:ProgramFiles\dotnet -Force
+        $env:PATH = "$Env:ProgramFiles\dotnet;" + $env:PATH
+        [Environment]::SetEnvironmentVariable("PATH", $env:PATH, [EnvironmentVariableTarget]::Machine)
+        
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ secrets.DOTNET_VERSION }}
+
+    - name: Add GitHub Packages source
+      run: |
+        nuget sources Add -Name "GitHub" -Source "https://nuget.pkg.github.com/PrimeEagle/index.json" -Username PrimeEagle -Password ${{ secrets.NUGET_TOKEN }}
       
-  call-reusable-workflow:
-    needs: setup-and-call-reusable
-    uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
-    with:
-      dotnetVersion: ${{ needs.setup-and-call-reusable.outputs.dotnetVersion }}
-      solutionPath: ${{ needs.setup-and-call-reusable.outputs.solutionPath }}
-      nugetToken: ${{ needs.setup-and-call-reusable.outputs.nugetToken }}
+    - name: Restore NuGet packages
+      run: dotnet restore ${{ secrets.DOTNET_SOLUTION }}
+      env:
+            NUGET_AUTH_TOKEN: ${{ secrets.NUGET_TOKEN }}
+              
+    - name: Build with version
+      run: dotnet build ${{ secrets.DOTNET_SOLUTION }} /p:BuildNumber=${{ github.run_number }}
+      
+    - name: Print Run Number
+      run: echo "Run number $env:GITHUB_RUN_NUMBER"
+      shell: pwsh
