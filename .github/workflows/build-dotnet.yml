@@ -26,6 +26,9 @@ jobs:
       with:
         dotnet-version: ${{ secrets.DOTNET_VERSION }}
 
+    - name: Debug
+      run: nuget sources list
+      
     - name: Restore NuGet packages
       run: dotnet restore ${{ secrets.DOTNET_SOLUTION }} --source https://nuget.pkg.github.com/PrimeEagle/index.json
       env:
