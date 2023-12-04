@@ -10,6 +10,8 @@ jobs:
       solutionPath: ${{ steps.set-vars.outputs.solutionPath }}
       nugetToken: ${{ steps.set-vars.outputs.nugetToken }}
     steps:
+      - name: Check secret length
+        run: echo "Length of NUGET_TOKEN - ${{ secrets.NUGET_TOKEN }}"
       - name: Set environment variables from secrets
         id: set-vars
         run: |
