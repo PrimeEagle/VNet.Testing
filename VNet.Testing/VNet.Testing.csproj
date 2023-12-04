@@ -11,4 +11,8 @@
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 	  <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
 	</Target>
+
+	<ItemGroup>
+	  <PackageReference Include="VNet.System" Version="1.0.0" />
+	</ItemGroup>
 </Project>
