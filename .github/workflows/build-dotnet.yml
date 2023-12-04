@@ -5,7 +5,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   call-reusable-workflow:
-    uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
+    uses: PrimeEagle/Reusable-Workflows/blob/main/.github/workflows/build-dotnet.yml@main
     with:
       dotnetVersion: ${{ secrets.DOTNET_VERSION }}
       solutionPath: ${{ secrets.DOTNET_SOLUTION }}
