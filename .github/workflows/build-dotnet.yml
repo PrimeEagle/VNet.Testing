@@ -3,16 +3,27 @@ name: Build .NET
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  call-reusable-workflow:
+  setup-and-call-reusable:
     runs-on: ubuntu-latest
-    env:
-      DOTNET_VERSION: ${{ secrets.DOTNET_VERSION }}
-      DOTNET_SOLUTION: ${{ secrets.DOTNET_SOLUTION }}
-      NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
+    outputs:
+      dotnetVersion: ${{ steps.set-vars.outputs.dotnetVersion }}
+      solutionPath: ${{ steps.set-vars.outputs.solutionPath }}
+      nugetToken: ${{ steps.set-vars.outputs.nugetToken }}
     steps:
-      - name: Call reusable workflow
-        uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
-        with:
-          dotnetVersion: ${{ env.DOTNET_VERSION }}
-          solutionPath: ${{ env.DOTNET_SOLUTION }}
-          nugetToken: ${{ env.NUGET_TOKEN }}
+      - name: Set environment variables from secrets
+        id: set-vars
+        run: |
+          echo "dotnetVersion=${{ secrets.DOTNET_VERSION }}" >> $GITHUB_ENV
+          echo "solutionPath=${{ secrets.DOTNET_SOLUTION }}" >> $GITHUB_ENV
+          echo "nugetToken=${{ secrets.NUGET_TOKEN }}" >> $GITHUB_ENV
+          echo "::set-output name=dotnetVersion::${{ secrets.DOTNET_VERSION }}"
+          echo "::set-output name=solutionPath::${{ secrets.DOTNET_SOLUTION }}"
+          echo "::set-output name=nugetToken::${{ secrets.NUGET_TOKEN }}"
+      
+  call-reusable-workflow:
+    needs: setup-and-call-reusable
+    uses: PrimeEagle/Reusable-Workflows/.github/workflows/build-dotnet.yml@main
+    with:
+      dotnetVersion: ${{ needs.setup-and-call-reusable.outputs.dotnetVersion }}
+      solutionPath: ${{ needs.setup-and-call-reusable.outputs.solutionPath }}
+      nugetToken: ${{ needs.setup-and-call-reusable.outputs.nugetToken }}
