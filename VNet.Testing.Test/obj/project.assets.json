@@ -384,7 +384,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "D:\\My Code\\VNet.System\\VNet.System.csproj": "1.0.0"
+          "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj": "1.0.0"
         },
         "compile": {
           "bin/placeholder/VNet.Testing.dll": {}
@@ -997,11 +997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Code\\VNet.Testing.git\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
+      "projectUniqueName": "D:\\My Code\\VNet.Testing\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
       "projectName": "VNet.Testing.Test",
-      "projectPath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
+      "projectPath": "D:\\My Code\\VNet.Testing\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
       "packagesPath": "C:\\Users\\johnv\\.nuget\\packages\\",
-      "outputPath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing.Test\\obj\\",
+      "outputPath": "D:\\My Code\\VNet.Testing\\VNet.Testing.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1024,8 +1024,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\My Code\\VNet.Testing.git\\VNet.Testing\\VNet.Testing.csproj": {
-              "projectPath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing\\VNet.Testing.csproj"
+            "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj": {
+              "projectPath": "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj"
             }
           }
         }
@@ -1081,10 +1081,10 @@
   },
   "logs": [
     {
-      "code": "NU1104",
+      "code": "NU1105",
       "level": "Error",
-      "message": "Unable to find project 'D:\\My Code\\VNet.System\\VNet.System.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\My Code\\VNet.System\\VNet.System.csproj",
+      "message": "Unable to find project information for 'D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj",
       "targetGraphs": [
         "net8.0"
       ]

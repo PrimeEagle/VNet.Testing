@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VsZ7avJs3QIPSwUcN/48Uy2Ina220Z+x2NgYJkvP9VwaC5eFgwv/4UnJCzVmTHkStfLSBS2wMe4PKNXxI1pA2w==",
+  "dgSpecHash": "Sxyuwe7Aip728uKpuBNLiD+JkpfwkWd92GrgugwTHCq75qx6E87Croqe7bvplp+WW7o6snLQ6N5xPiR9Ix7rqg==",
   "success": false,
-  "projectFilePath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
+  "projectFilePath": "D:\\My Code\\VNet.Testing\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnv\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\microsoft.codecoverage\\17.9.0-preview-23531-01\\microsoft.codecoverage.17.9.0-preview-23531-01.nupkg.sha512",
@@ -16,10 +16,10 @@
   ],
   "logs": [
     {
-      "code": "NU1104",
+      "code": "NU1105",
       "level": "Error",
-      "message": "Unable to find project 'D:\\My Code\\VNet.System\\VNet.System.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\My Code\\VNet.System\\VNet.System.csproj",
+      "message": "Unable to find project information for 'D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj",
       "targetGraphs": [
         "net8.0"
       ]

@@ -10,7 +10,7 @@
 
 	<!-- Include project references by default -->
 	<ItemGroup Condition="'$(UsePackageReferences)' != 'true'">
-		<ProjectReference Include="..\..\VNet.System\VNet.System.csproj" />
+		<ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
 	</ItemGroup>
 
 	<!-- Include NuGet package references when UsePackageReferences is true -->

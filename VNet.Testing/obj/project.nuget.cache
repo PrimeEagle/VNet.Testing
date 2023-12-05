@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "rpKWtpMizxuW+EwkCS+KBCpOn9H+011glkhfPpFpJx1Oh41nnMthSu+r7mBatxI0SVfUBCq7Nqc98M+XNRdPJg==",
+  "dgSpecHash": "g85CjJUTNXfLFHQY/AKQ9JSrablt2jvklfOGRrlHKwQqMoR+FtHx2VXmdR+w7HUe9DpYVt15iULW7QEfez7aTg==",
   "success": false,
-  "projectFilePath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing\\VNet.Testing.csproj",
+  "projectFilePath": "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
-      "code": "NU1104",
+      "code": "NU1105",
       "level": "Error",
-      "message": "Unable to find project 'D:\\My Code\\VNet.System\\VNet.System.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\My Code\\VNet.System\\VNet.System.csproj",
+      "message": "Unable to find project information for 'D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj",
       "targetGraphs": [
         "net8.0"
       ]
