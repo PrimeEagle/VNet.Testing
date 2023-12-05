@@ -1,14 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
 
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
-	</Target>
+	<PropertyGroup>
+		<UsePackageReferences Condition="'$(UsePackageReferences)' == ''">false</UsePackageReferences>
+	</PropertyGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="VNet.System" Version="1.0.0" />
+	<!-- Include project references by default -->
+	<ItemGroup Condition="'$(UsePackageReferences)' != 'true'">
+		<ProjectReference Include="..\..\VNet.System\VNet.System.csproj" />
 	</ItemGroup>
+
+	<!-- Include NuGet package references when UsePackageReferences is true -->
+	<ItemGroup Condition="'$(UsePackageReferences)' == 'true'">
+		<PackageReference Include="VNet.System" Version="1.0.0" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+	</Target>
 </Project>

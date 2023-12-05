@@ -1,20 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "L9CLWThhS7tfVpUlBJR23g16WjRJ5NpxvPvSOhR428xSL1NdzlQYCv+vp9AQV8mxMwPkNEcKvp3IRbbveTDBAQ==",
-  "success": true,
+  "dgSpecHash": "rpKWtpMizxuW+EwkCS+KBCpOn9H+011glkhfPpFpJx1Oh41nnMthSu+r7mBatxI0SVfUBCq7Nqc98M+XNRdPJg==",
+  "success": false,
   "projectFilePath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing\\VNet.Testing.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\johnv\\.nuget\\packages\\keralua\\1.3.4\\keralua.1.3.4.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\nlua\\1.6.3\\nlua.1.6.3.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\vnet.system\\1.0.0\\vnet.system.1.0.0.nupkg.sha512"
-  ],
-  "logs": []
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\My Code\\VNet.System\\VNet.System.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\My Code\\VNet.System\\VNet.System.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
