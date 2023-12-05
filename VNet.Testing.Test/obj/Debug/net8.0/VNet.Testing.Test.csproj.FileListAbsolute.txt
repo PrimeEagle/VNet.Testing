@@ -141,3 +141,4 @@ D:\My Code\VNet.Testing.git\VNet.Testing.Test\obj\Debug\net8.0\refint\VNet.Testi
 D:\My Code\VNet.Testing.git\VNet.Testing.Test\obj\Debug\net8.0\VNet.Testing.Test.pdb
 D:\My Code\VNet.Testing.git\VNet.Testing.Test\obj\Debug\net8.0\VNet.Testing.Test.genruntimeconfig.cache
 D:\My Code\VNet.Testing.git\VNet.Testing.Test\obj\Debug\net8.0\ref\VNet.Testing.Test.dll
+D:\My Code\VNet.Testing.git\VNet.Testing.Test\bin\Debug\net8.0\CoverletSourceRootsMapping_VNet.Testing.Test

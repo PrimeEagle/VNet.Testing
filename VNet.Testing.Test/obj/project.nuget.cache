@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "verBs+tyBIBQJ0v7oI0khDo5HBT1YKvhWL//SlpVomlFeJQnghB5Qp/udF8sQigMOhG37dOyl2/BFtvW1pJfKg==",
+  "dgSpecHash": "VsZ7avJs3QIPSwUcN/48Uy2Ina220Z+x2NgYJkvP9VwaC5eFgwv/4UnJCzVmTHkStfLSBS2wMe4PKNXxI1pA2w==",
   "success": false,
   "projectFilePath": "D:\\My Code\\VNet.Testing.git\\VNet.Testing.Test\\VNet.Testing.Test.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\johnv\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\microsoft.codecoverage\\17.9.0-preview-23531-01\\microsoft.codecoverage.17.9.0-preview-23531-01.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\microsoft.net.test.sdk\\17.9.0-preview-23531-01\\microsoft.net.test.sdk.17.9.0-preview-23531-01.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.9.0-preview-23531-01\\microsoft.testplatform.objectmodel.17.9.0-preview-23531-01.nupkg.sha512",
