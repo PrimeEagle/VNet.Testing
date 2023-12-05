@@ -1,0 +1,13 @@
+D:\My Code\VNet.Testing.git\VNet.Testing\bin\Debug\net8.0\VNet.Testing.deps.json
+D:\My Code\VNet.Testing.git\VNet.Testing\bin\Debug\net8.0\VNet.Testing.dll
+D:\My Code\VNet.Testing.git\VNet.Testing\bin\Debug\net8.0\VNet.Testing.pdb
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.csproj.AssemblyReference.cache
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.AssemblyInfoInputs.cache
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.AssemblyInfo.cs
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.csproj.CoreCompileInputs.cache
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.sourcelink.json
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.dll
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\refint\VNet.Testing.dll
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\VNet.Testing.pdb
+D:\My Code\VNet.Testing.git\VNet.Testing\obj\Debug\net8.0\ref\VNet.Testing.dll

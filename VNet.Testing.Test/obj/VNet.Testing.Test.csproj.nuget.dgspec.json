@@ -28,7 +28,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/PrimeEagle/index.json": {},
           "https://nuget.pkg.github.com/PrimeEagle/index.json": {}
         },
         "frameworks": {
@@ -53,19 +52,15 @@
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[3.1.1, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[3.1.1, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.9.4, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[17.9.0-preview-23531-01, )"
             }
           },
           "imports": [
@@ -112,7 +107,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/PrimeEagle/index.json": {},
           "https://nuget.pkg.github.com/PrimeEagle/index.json": {}
         },
         "frameworks": {
