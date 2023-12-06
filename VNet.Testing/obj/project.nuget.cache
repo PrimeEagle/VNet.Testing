@@ -1,18 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "g85CjJUTNXfLFHQY/AKQ9JSrablt2jvklfOGRrlHKwQqMoR+FtHx2VXmdR+w7HUe9DpYVt15iULW7QEfez7aTg==",
-  "success": false,
+  "dgSpecHash": "+hulr2mYfKCRuJmO6rjGdu08vqOLa/mFsS5GsITSvarJu/OpJ7NSuM+K0IjgIbjQJ6DZwn4xIO2AEXnlTzAKew==",
+  "success": true,
   "projectFilePath": "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\johnv\\.nuget\\packages\\keralua\\1.3.4\\keralua.1.3.4.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\nlua\\1.6.3\\nlua.1.6.3.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\vnet.system\\1.0.0\\vnet.system.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }
