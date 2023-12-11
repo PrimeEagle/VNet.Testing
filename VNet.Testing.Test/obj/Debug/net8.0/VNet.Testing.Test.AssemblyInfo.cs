@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNet.Testing.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da91a0be8bcebea5b7b8df82bb1d76ee5e659282")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNet.Testing.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNet.Testing.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

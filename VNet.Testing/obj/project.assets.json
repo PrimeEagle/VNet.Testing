@@ -250,8 +250,7 @@
         }
       },
       "VNet.System/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1",
@@ -259,10 +258,10 @@
           "System.Security.Permissions": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/VNet.System.dll": {}
+          "lib/net8.0/VNet.System.dll": {}
         },
         "runtime": {
-          "bin/placeholder/VNet.System.dll": {}
+          "lib/net8.0/VNet.System.dll": {}
         }
       }
     }
@@ -632,9 +631,15 @@
       ]
     },
     "VNet.System/1.0.0": {
-      "type": "project",
-      "path": "../../VNet.System/VNet.System/VNet.System.csproj",
-      "msbuildProject": "../../VNet.System/VNet.System/VNet.System.csproj"
+      "sha512": "V0H0AFerOUjvmy0oiBOyN+4LWPtsYr0hFHAmllPe18jY0kSRB2h07sw4EKv1TLzUwpx8skGkr/pYNudSFwa3Fw==",
+      "type": "package",
+      "path": "vnet.system/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net8.0/VNet.System.dll",
+        "vnet.system.1.0.0.nupkg.sha512",
+        "vnet.system.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -659,7 +664,6 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\My Code\\NuGet.Config",
         "C:\\Users\\johnv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -675,11 +679,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj": {
-              "projectPath": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -691,6 +691,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "VNet.System": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -224,7 +224,10 @@
           "System.Security.Permissions": "7.0.0"
         },
         "runtime": {
-          "VNet.System.dll": {}
+          "lib/net8.0/VNet.System.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -306,9 +309,11 @@
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
     "VNet.System/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V0H0AFerOUjvmy0oiBOyN+4LWPtsYr0hFHAmllPe18jY0kSRB2h07sw4EKv1TLzUwpx8skGkr/pYNudSFwa3Fw==",
+      "path": "vnet.system/1.0.0",
+      "hashPath": "vnet.system.1.0.0.nupkg.sha512"
     }
   }
 }
