@@ -1,19 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "D++MHvZSEQt9nspGfwZjlMh50JQNLdEsRlECD1H3JzcgpOO5eHYB+rVEkhbzWiiq+2WHm7n3DNGE+XCRD4rw4Q==",
+  "dgSpecHash": "48T1KBjj5Lz4DdS5AJsaILvD+znTvRG4e8Mzc1e/pO9OJcCiDn8LRI88bcSgkxJU7lYvAC+tPLcQ3hX2mTXhpg==",
   "success": true,
-  "projectFilePath": "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
+  "projectFilePath": "D:\\My Code\\VNet-Solution\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnv\\.nuget\\packages\\keralua\\1.3.4\\keralua.1.3.4.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\nlua\\1.6.3\\nlua.1.6.3.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnv\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.security.permissions\\8.0.0\\system.security.permissions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\johnv\\.nuget\\packages\\vnet.system\\1.0.0\\vnet.system.1.0.0.nupkg.sha512"
   ],
   "logs": []
