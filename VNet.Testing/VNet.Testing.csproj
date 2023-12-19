@@ -1,24 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	</PropertyGroup>
 
-	<PropertyGroup>
-		<UsePackageReferences Condition="'$(UsePackageReferences)' == ''">false</UsePackageReferences>
+	<PropertyGroup Condition="'$(ServerBuild)' != ''">
 	</PropertyGroup>
 
-	<!-- Include project references by default -->
-
-	<!-- Include NuGet package references when UsePackageReferences is true -->
-	<ItemGroup Condition="'$(UsePackageReferences)' == 'true'">
+	<ItemGroup Condition="'$(ServerBuild)' != ''">
 		<PackageReference Include="VNet.System" Version="1.0.0" />
 	</ItemGroup>
-	<ItemGroup>
-	  <PackageReference Include="VNet.System" Version="1.0.0" />
+
+	<ItemGroup Condition="'$(ServerBuild)' == ''">
+		<ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
 	</ItemGroup>
-	
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
 		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
 	</Target>
 </Project>
