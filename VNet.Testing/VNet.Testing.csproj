@@ -6,6 +6,27 @@
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<PackageId>VNet.Testing</PackageId>
+		<Authors>PrimeEagle</Authors>
+		<Product>VNet.Testing</Product>
+		<Description>Class library for helper functions for testing.</Description>
+		<PackageTags>dotnet;dotnet-core;dotnet-library;testing;unit-test;mocking</PackageTags>
+		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.Testing</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PrimeEagle/VNet.Testing</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>VNet.Testing</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
 	<PropertyGroup Condition="'$(ServerBuild)' != ''">
 	</PropertyGroup>
 

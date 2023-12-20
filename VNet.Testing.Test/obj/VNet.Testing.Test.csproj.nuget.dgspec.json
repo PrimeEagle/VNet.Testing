@@ -116,7 +116,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj": {
+                "projectPath": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -128,12 +132,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "VNet.System": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
