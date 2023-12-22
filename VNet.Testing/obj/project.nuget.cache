@@ -1,18 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "SmShhShkcgBbozTJObSbO5rW/oO79eT7n1atBy9CttnhK7YONVsRXeXp6GsihU2pdxxv1hf3YKBkLVy+h614rg==",
-  "success": false,
-  "projectFilePath": "D:\\My Code\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\My Code\\VNet.System\\VNet.System\\VNet.System.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "dgSpecHash": "iH3jUM4aWV9EIp1EIkT4dgnlLXJCtNpCskarTa2RCCxt86meu00SvOpu7qmXgQw3Ms7mu+TOJ6mpoPACwFdjWQ==",
+  "success": true,
+  "projectFilePath": "D:\\My Code\\VNet\\VNet.Testing\\VNet.Testing\\VNet.Testing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\johnv\\.nuget\\packages\\keralua\\1.3.4\\keralua.1.3.4.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\nlua\\1.6.3\\nlua.1.6.3.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.security.permissions\\8.0.0\\system.security.permissions.8.0.0.nupkg.sha512",
+    "C:\\Users\\johnv\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }
